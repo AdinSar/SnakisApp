@@ -1,0 +1,31 @@
+﻿@page
+@model SnakisApp.Pages.Admin.IndexModel
+@{
+}
+
+<div>
+
+    Befintliga användare: <br />
+
+    <table>
+
+        <tr>
+            <th>Användarnamn</th>
+     
+       
+        </tr>
+
+
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.UserName</td>
+
+               
+                }
+
+            </tr>
+        }
+    </table>
+
+</div>
